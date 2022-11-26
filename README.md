@@ -27,3 +27,18 @@ More about this can be read in the Uploaded PDF.
 This is a graphical illustration of the 3 state model of the same Linear MPC controller. 
 Here we have 3 state variables namely , x0=10 , x1=5 , x2=2 . 
 These all start at the given initial points and try to converge towards the origin( which is our target destination) following the control parameters defined by u.
+
+# APPLICATIONS OF LINEAR MPC 
+
+![8f436a6807c1824dfbd8ef954e1a4005](https://user-images.githubusercontent.com/94890363/204094907-5eafb1c0-9e88-4ad0-8577-8af0c207693f.gif)
+
+
+
+* Let us image a case of a mars rover and consider a nominal 2d direction of motion. 
+* Let us imagine that the motion of the rover is in 2d and the rover is falling with some initial velocity 
+* This meand that the MPC controller has to put a great amount of thrust in the start and then the amount of thrust should reduce with time.
+* This could be done with the above two given models.
+* The origin would be the y=0 point and our initial point would be defined by the state parameters.
+* The rover would have a velocity which would be defined as vcosΘ and vsinΘ. The MPC controller will try to optimise the thrust by providing the most optimal thrust to our problem.
+
+
