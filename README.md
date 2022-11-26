@@ -8,3 +8,5 @@ This is done by predicting from a large number of predictions based on our contr
 for the other predictions. 
 
 This concept is currently being used in chemical plants , with a large number of applications in autonomous vehicals , obstacle avoidance etc.
+
+![image](https://user-images.githubusercontent.com/94890363/204078094-972ae6ae-9683-4c65-b6b0-8c51960628e3.png)
