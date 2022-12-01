@@ -41,4 +41,11 @@ These all start at the given initial points and try to converge towards the orig
 * The origin would be the y=0 point and our initial point would be defined by the state parameters.
 * The rover would have a velocity which would be defined as vcosΘ and vsinΘ. The MPC controller will try to optimise the thrust by providing the most optimal thrust to our problem.
 
+# Learning- Based MPC 
+
+* This is a different section of MPC, where the model learns based on the repetitive execution of the code. 
+* The constraints are pre-feeded to the model. The model then performs MPC optimisations on the datasets once , then it optimises the datasets even more as the laps go on. 
+* There is an entire team dedicated to make this possible in racing. 
+* Their video can be found here - https://youtu.be/aCDPwZZm9C4
+
 
