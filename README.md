@@ -28,6 +28,31 @@ This is a graphical illustration of the 3 state model of the same Linear MPC con
 Here we have 3 state variables namely , x0=10 , x1=5 , x2=2 . 
 These all start at the given initial points and try to converge towards the origin( which is our target destination) following the control parameters defined by u.
 
+# Reducing Online Computation 
+
+* The online computation for the above problem takes a lot of time.
+* Firstly, the model has to calcuate the k+1 predictions of the n state variables , and the k predictions of the m control variables. 
+* This brings the trivial computation time to **n(N+1) + m(N)**. 
+* To execute this properly CPU with large computation power and higher clock speed are required. 
+* This in turn makes the entire MPC controller costly.  
+* Therefore there is a need to reduce the online computation of the MPC controller.
+
+## We can do that in 2 ways :- 
+
+### 1. By reducing the number of variables in the final equation by removing Xk. 
+  * This will reduce the computation and will bring the overall computation time to **mN** as we got rid of the state variable Xk
+  * The reduction is given below :-
+  
+   ![image](https://user-images.githubusercontent.com/94890363/205126679-a1f3429c-87db-40df-a86e-ef47405c8031.png)
+   
+### 2. By optimising the number of control variables by using a horizon which is lesser than the control horizon.
+  * Now the total cost of computation will reduce to m*(NC) , NC being our new control horizon ( smaller than N) 
+  * This is method is added to the previous method which in turn give us the most time efficient solution.
+  * Nc is usually chosen as 2. 
+
+
+ 
+
 # APPLICATIONS OF LINEAR MPC 
 
 ![8f436a6807c1824dfbd8ef954e1a4005](https://user-images.githubusercontent.com/94890363/204094907-5eafb1c0-9e88-4ad0-8577-8af0c207693f.gif)
