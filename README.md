@@ -73,7 +73,7 @@ These all start at the given initial points and try to converge towards the orig
 * There is an entire team dedicated to make this possible in racing. 
 * Their video can be found here - https://youtu.be/aCDPwZZm9C4
 
-#Final Simulation on Turlebot3:-
+# Final Simulation on Turlebot3:-
 
 
 https://user-images.githubusercontent.com/94890363/219039530-28044044-cdd4-4127-977a-ec8852df5f7b.mp4
